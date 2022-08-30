@@ -1,0 +1,65 @@
+.occupation {
+    padding-top: 46px;
+    padding-bottom: 94px;
+}
+
+.occupation-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    color: #212121;
+    font-weight: 700;
+}
+
+.occupation-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.occupation-item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+}
+
+.occupation-description {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 82px 27px 83px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 24%;
+}
+
+
+// For mobile
+@media screen and (min-width: 480px) {
+    .occupation {
+        display: none;
+    }
+}
+
+// For tablet
+@media screen and (min-width: 768px) {
+    .occupation {
+        display: none;
+    }
+}
+
+//For desktop
+@media screen and (min-width: 1200px) {
+    .occupation {
+        display: block;
+        margin-bottom: 94px;
+    }
+}

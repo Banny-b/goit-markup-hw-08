@@ -1,0 +1,103 @@
+/*.portfolio__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio__item {
+    flex-basis: calc((100% - 60px) / 3);
+}*/
+
+.portfolio__link-wrapper {
+    display: block;
+
+        &:hover .overlay,
+        &:focus .overlay {
+            transform: translate(0, 0);
+        }
+}
+
+.portfolio__img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    overflow: auto;
+    transform: translate(0, 100%);
+    transition: var(--transition-duration-and-func);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    padding: 63px 24px;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(33, 150, 243, 0.9);
+}
+
+.portfolio__item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow var(--transition-duration-and-func);
+}
+
+.portfolio-proect {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+    color: #212121;
+}
+
+.portfolio-proect-item {
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.portfolio-proect-name {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    padding-right: 24px;
+    padding-left: 24px;
+}
+
+// For mobile
+@media screen and (min-width: 480px) {
+    .portfolio__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+// For tablet
+@media screen and (min-width: 768px) {
+    .portfolio__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    .portfolio__item:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+// For desktop
+@media screen and (min-width: 1200px) {
+    .portfolio-proect {
+            font-size: 18px;
+            letter-spacing: 0.04em;
+            
+        }
+    .portfolio__item {
+            flex-basis: calc((100% - 60px) / 3);
+        }
+}
+

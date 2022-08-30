@@ -1,0 +1,215 @@
+.basement {
+    margin-right: auto;
+    margin-left: auto;
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/*.basement__main {
+    display: flex;
+    align-items: baseline;
+}
+
+.basement__container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+*/
+.basement__logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    font-family: var(--secondary-font);
+    margin-bottom: 20px;
+}
+
+.basement__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.basement__adress {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    font-weight: 400;
+    transition: color var(--transition-duration-and-func);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.basement__contact-mail {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    transition: color var(--transition-duration-and-func);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+
+.basement__contact-phone {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    transition: color var(--transition-duration-and-func);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+}
+/*
+.basement-social {
+    margin-right: 93px;
+}
+*/
+.basement-invitation {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.basement-social-list {
+    display: flex;
+    justify-content: space-between;
+    width: 208px;
+    gap: 10px;
+}
+
+.basement-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color var(--transition-duration-and-func);
+
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+}
+
+.basement-social-icon {
+    fill: #FFFFFF;
+}
+
+.basement__form-message {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+/*
+.basement__form-container {
+    display: flex;
+}
+*/
+.basement-form-input {
+    /*width: 358px;*/
+    height: 50px;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    /*margin-right: 12px;*/
+    background-color: #2F303A;
+    padding-left: 16px;
+    transition: border-color var(--transition-duration-and-func);
+
+        &:focus {
+            border-color: var(--accent-color);
+            outline: none;
+        }
+}
+
+
+// for mobile
+@media screen and (min-width: 480px) {
+    .basement__container {
+        display: flex;
+        flex-direction: column;
+    }
+    .basement__logo {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .basement__list {
+        margin-bottom: 60px;
+    }
+    .basement__item {
+        text-align: center;
+    }
+    .basement-invitation {
+        text-align: center;
+    }
+    .basement-social-list {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 60px;
+    }
+    .basement__form-message {
+        text-align: center;
+    }
+    .basement-form-input {
+        display: block;
+        width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+    .basement__form-button {
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+// For tablet
+@media screen and (min-width: 768px) {
+    .basement-tablet {
+        display: flex;
+        justify-content: space-between;
+    }
+    .basement-invitation {
+        padding-top: 5px;
+    }
+}
+
+// For Desktop
+@media screen and (min-width: 1200px) {
+    .basement__main {
+        display: flex;
+        align-items: baseline;
+    }
+    .basement__container {
+        margin-right: 70px;
+    }
+    .basement-social {
+        margin-right: 93px;
+    }
+}
+
+// Доделать эту секцию!
