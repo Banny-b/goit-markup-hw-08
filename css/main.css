@@ -1535,9 +1535,11 @@ address {
   }
   .mobile-menu__container {
     position: relative;
-    padding-top: 48px;
-    padding-left: 40px;
-    padding-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 48px 40px;
   }
   .mobile-menu__close-button {
     position: absolute;
