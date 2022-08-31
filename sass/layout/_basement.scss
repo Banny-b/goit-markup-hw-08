@@ -148,17 +148,17 @@
 
 
 // for mobile
-@media screen and (min-width: 480px) {
-    .basement__container {
+@media screen and (max-width: 767px) {
+    .basement__logo {
+        display: block;
+        text-align: center;
+    }
+    .basement-tablet {
         display: flex;
         flex-direction: column;
     }
-    .basement__logo {
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .basement__list {
-        margin-bottom: 60px;
+    .basement__container {
+        padding-bottom: 60px;
     }
     .basement__item {
         text-align: center;
@@ -188,13 +188,36 @@
 }
 
 // For tablet
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
+    .basement__logo {
+        display: block;
+    }
     .basement-tablet {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding-bottom: 60px;
     }
     .basement-invitation {
+        text-align: center;
         padding-top: 5px;
+    }
+    .basement__form-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .basement__form-message {
+        text-align: center;
+    }
+    .basement-form-input {
+        width: 450px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 20px;
+    }
+    .basement__form-button {
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -204,12 +227,24 @@
         display: flex;
         align-items: baseline;
     }
+    .basement-tablet {
+        display: flex;
+        margin-right: auto;
+    }
     .basement__container {
         margin-right: 70px;
     }
+    .basement__logo {
+        display: block;
+    }
+    .basement__form-container {
+        display: flex;
+    }
+        .basement-form-input {
+            width: 358px;
+            margin-right: 12px;
+    }
     .basement-social {
-        margin-right: 93px;
+        padding-top: 12px;
     }
 }
-
-// Доделать эту секцию!

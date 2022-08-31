@@ -28,8 +28,8 @@
 
 .hero {
     max-width: 1600px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -37,7 +37,6 @@
     url("..//..//img/hero/mobile/hero-bg-mob.jpg");
     background-size: cover;
     background-color: #C4C4C4;
-    margin-bottom: 60px;
 }
 
 .hero-title {
@@ -59,13 +58,15 @@
 screen and (min-resolution: 192dpi) and (max-width: 767px),
 screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
-        background-image: url("..//..//img/hero/mobile/hero-bg-mob@2x.jpg");
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url("..//..//img/hero/mobile/hero-bg-mob@2x.jpg");
     }   
 }
 
 @media screen and (min-width: 768px) {
     .hero {
-        background-image: url("..//..//img/hero/tablet/hero-bg-tab.jpg");
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url("..//..//img/hero/tablet/hero-bg-tab.jpg");
     }
 }
 
@@ -73,14 +74,16 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
 screen and (min-resolution: 192dpi) and (min-width: 768px),
 screen and (min-resolution: 2dppx) and (min-width: 768px) {
     .hero {
-        background-image: url("..//../img/hero/tablet/hero-bg-tab@2x.jpg");
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url("..//../img/hero/tablet/hero-bg-tab@2x.jpg");
     }
     
 }
 
 @media screen and (min-width: 1200px) {
     .hero {
-        background-image: url("..//..//img/hero/desktop/hero-bg-desk.jpg");
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url("..//..//img/hero/desktop/hero-bg-desk.jpg");
     }
     .hero-title {
         font-size: 44px;
@@ -93,6 +96,7 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
 screen and (min-resolution: 192dpi) and (min-width: 1200px),
 screen and (min-resolution: 2dppx) and (min-width: 1200px) {
     .hero {
-        background-image: url("..//..//img/hero/desktop/hero-bg-desk@2x.jpg");
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+        url("..//..//img/hero/desktop/hero-bg-desk@2x.jpg");
     }
 }

@@ -1,12 +1,15 @@
-/*.menu__button {
+.menu__button {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+    row-gap: 15px;
 }
-*/
+/*
 .menu__button-item:not(:last-child) {
     margin-right: 8px;
-}
+}*/
 
 .menu__button-item:hover,
 .modal-button-filter:focus {
@@ -44,38 +47,26 @@
 // For mobile
 @media screen and (max-width: 767px) {
     .menu__button {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 25px;
+        margin-bottom: 40px;
     }
-    .menu__button-item {
+    /*.menu__button-item {
         margin-bottom: 15px;
-    }
+    }*/
 }
 
 // For tablet
 @media screen and (max-width: 1199px) {
     .menu__button {
-        display: flex;
         justify-content: center;
-        margin-bottom: 14px;
+        margin-bottom: 30px;
     }
-    .menu__button-item {
-        margin-bottom: 16px;
-    } 
-
 }
 
 // For desktop
 @media screen and (min-width: 1200px) {
     .menu__button {
-        display: flex;
         justify-content: center;
-        margin-bottom: 34px;
-    }
-    .menu__button-item {
-        margin-bottom: 16px;
+        margin-bottom: 50px;
     }
 }
 

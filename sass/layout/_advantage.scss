@@ -39,11 +39,12 @@
     height: 75px;
     color: #757575;
     font-size: 14px;
-}*/
+}
 
 .advantage {
-    margin-bottom: 60px; // Проверить!
-}
+    padding-top: 94px;
+    padding-bottom: 94px;
+}*/
 
 .advantage-container-icon {
     display: flex;
@@ -72,19 +73,30 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #757575;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/ // на моб - нельзя! тут сделать на лишки через :not(:last-child)
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
+    .advantage {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
     .advantage-list {
         display: block;
     }
     .advantage-item {
         width: 100%;
     }
+    .advantage-item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
 
 @media screen and (min-width: 768px) {
+    .advantage {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        }
     .advantage-list {
         display: flex;
         flex-wrap: wrap;
@@ -96,14 +108,15 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .advantage {
+        padding-top: 94px;
+        padding-bottom: 94px;
+        }
     .advantage-list {
         display: flex;
         flex-wrap: nowrap;
     }
     .advantage-item {
         width: 270px;
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
     }
 }

@@ -23,8 +23,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
-    height: 92px;
+    /*width: 170px;
+    height: 92px;*/
     border: 1px solid rgba(175, 177, 184, 1);
     border-radius: 4px;
     transition: border-color var(--transition-duration-and-func);
@@ -55,14 +55,25 @@
         flex-wrap: wrap;
         gap: 30px;
     }
+    .client-list-link {
+        width: 210px;
+        height: 92px;
+    }
 }
 
 // For tablet
 @media screen and (min-width: 768px) {
-    
+    .client-list-link {
+        width: 226px;
+        height: 92px;
+    }
 }
 
 // For Desktop
 @media screen and (min-width: 1200px) {
+    .client-list-link {
+        width: 170px;
+        height: 92px;
+    }
     
 }
