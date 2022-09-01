@@ -777,9 +777,12 @@ address {
 }
 
 @media screen and (max-width: 767px) {
-  .team-item {
+  .team-item:not(:last-child) {
     margin-bottom: 30px;
   }
+  /*.team-item {
+      margin-bottom: 30px;
+  }*/
 }
 @media screen and (min-width: 768px) {
   .team-item {
@@ -1054,7 +1057,7 @@ address {
   .basement-tablet {
     display: flex;
     justify-content: space-around;
-    padding-bottom: 60px;
+    margin-bottom: 60px;
   }
   .basement-invitation {
     text-align: center;
@@ -1087,6 +1090,7 @@ address {
   .basement-tablet {
     display: flex;
     margin-right: auto;
+    align-items: baseline;
   }
   .basement__container {
     margin-right: 70px;
@@ -1100,9 +1104,6 @@ address {
   .basement-form-input {
     width: 358px;
     margin-right: 12px;
-  }
-  .basement-social {
-    padding-top: 12px;
   }
 }
 .basement__form-button {

@@ -195,7 +195,7 @@
     .basement-tablet {
         display: flex;
         justify-content: space-around;
-        padding-bottom: 60px;
+        margin-bottom: 60px;
     }
     .basement-invitation {
         text-align: center;
@@ -230,6 +230,7 @@
     .basement-tablet {
         display: flex;
         margin-right: auto;
+        align-items: baseline;
     }
     .basement__container {
         margin-right: 70px;
@@ -243,8 +244,5 @@
         .basement-form-input {
             width: 358px;
             margin-right: 12px;
-    }
-    .basement-social {
-        padding-top: 12px;
     }
 }

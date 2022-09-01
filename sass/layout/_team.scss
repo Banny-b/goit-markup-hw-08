@@ -89,9 +89,12 @@
 
 // For mobile
 @media screen and (max-width: 767px) {
-    .team-item {
+    .team-item:not(:last-child) {
         margin-bottom: 30px;
     }
+    /*.team-item {
+        margin-bottom: 30px;
+    }*/
 }
 
 // For tablet
