@@ -1396,7 +1396,7 @@ address {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 32px;
-  margin-bottom: 302px;
+  margin-bottom: 102px;
 }
 
 .mobile-menu__link {
@@ -1463,7 +1463,7 @@ address {
 
 .mobile-menu__social {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 }
 
 .mobile-menu__social-item {
