@@ -709,17 +709,6 @@ address {
   padding-bottom: 60px;
 }
 
-/*.basement__main {
-    display: flex;
-    align-items: baseline;
-}
-
-.basement__container {
-    display: flex;
-    flex-direction: column;
-    margin-right: 70px;
-}
-*/
 .basement__logo {
   font-weight: 700;
   font-size: 26px;
@@ -738,7 +727,7 @@ address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: 400;
   transition: color var(--transition-duration-and-func);
 }
@@ -770,11 +759,6 @@ address {
   color: var(--accent-color);
 }
 
-/*
-.basement-social {
-    margin-right: 93px;
-}
-*/
 .basement-invitation {
   font-weight: 700;
   font-size: 14px;
@@ -820,19 +804,12 @@ address {
   margin-bottom: 20px;
 }
 
-/*
-.basement__form-container {
-    display: flex;
-}
-*/
 .basement-form-input {
-  /*width: 358px;*/
   height: 50px;
   color: #FFFFFF;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  /*margin-right: 12px;*/
   background-color: #2F303A;
   padding-left: 16px;
   transition: border-color var(--transition-duration-and-func);
@@ -870,7 +847,7 @@ address {
   }
   .basement-form-input {
     display: block;
-    width: 450px;
+    width: 310px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
@@ -901,7 +878,7 @@ address {
     text-align: center;
   }
   .basement-form-input {
-    width: 450px;
+    width: 310px;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 20px;
